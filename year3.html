@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year 3 - Specialisation - Polaris Edge</title>
+  <meta name="description" content="Year 3 specialisation roadmap for disaggregated serving, KV cache, and agentic workflows." />
+  <meta property="og:title" content="Year 3 - Specialisation - Polaris Edge" />
+  <meta property="og:description" content="Focus on serving systems, KV cache management, quantization, and agentic workflows." />
+  <meta property="og:image" content="og-preview.png" />
+  <meta name="theme-color" content="#0F1117" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav" id="navbar">
+      <a href="index.html" class="brand"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="year1.html">Year 1</a>
+        <a href="year2.html">Year 2</a>
+        <a href="year3.html" class="active">Year 3</a>
+        <a href="year4.html">Year 4</a>
+      </div>
+
+    </nav>
+
+    <div id="progress-bar"></div>
+
+    <section class="page-header">
+      <span class="eyebrow">Year 3 - 2028-2029</span>
+      <h1>Specialisation</h1>
+      <p class="page-desc">Disaggregated serving, KV cache management, quantization, and agentic workflows.</p>
+    </section>
+
+    <div class="commit-box">
+      <span class="commit-label">Weekly Commitment</span>
+      <span class="commit-value">14 hours self-study + Polaris curriculum</span>
+    </div>
+
+    <div class="skill-section">
+      <h3>Specialised Skills</h3>
+      <div class="skill-bar"><span>Streaming (Flink)</span><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div></div>
+      <div class="skill-bar"><span>Disaggregated serving</span><div class="bar-track"><div class="bar-fill" style="width:35%"></div></div></div>
+      <div class="skill-bar"><span>KV cache management</span><div class="bar-track"><div class="bar-fill" style="width:35%"></div></div></div>
+      <div class="skill-bar"><span>Quantization (W4A8, KV)</span><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div></div>
+      <div class="skill-bar"><span>MLOps</span><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div></div>
+      <div class="skill-bar"><span>On-device AI</span><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div></div>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <h3>12-Month Execution Plan</h3>
+      <div class="table-responsive">
+        <table class="dsa-table">
+          <thead>
+            <tr>
+              <th style="width: 15%;">Month</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Month 1</td><td>Apache Flink and event-time processing.</td></tr>
+            <tr><td>Month 2</td><td>Grafana, Loki and Tempo dashboards. Define SLIs and SLOs.</td></tr>
+            <tr><td>Month 3</td><td>Read <em>Taming the Titans</em> and <em>Mooncake</em>. Plan the disaggregated serving demo.</td></tr>
+            <tr><td>Month 4</td><td>Build the Prefill/Decode split architecture.</td></tr>
+            <tr><td>Month 5</td><td>Benchmark KV cache transfer versus compute time. Read QServe and KVQuant.</td></tr>
+            <tr><td>Month 6</td><td>AWS Machine Learning Engineer Associate preparation.</td></tr>
+            <tr><td>Month 7</td><td>Pass AWS MLA-C01 and MongoDB Associate Developer certifications.</td></tr>
+            <tr><td>Month 8</td><td>Relational vs NoSQL data modeling and storage internals. Read <em>The Tail at Scale</em>.</td></tr>
+            <tr><td>Month 9</td><td>Study Site Reliability Engineering fundamentals including error budgets and blameless postmortems. Begin Google Cloud DevOps Engineer preparation.</td></tr>
+            <tr><td>Month 10</td><td>Pass the Google Cloud DevOps Engineer certification. Reframe the Claude + MCP project into an agentic serving workload.</td></tr>
+            <tr><td>Month 11</td><td>Prepare for the NVIDIA Generative AI LLMs Professional certification (stretch goal). Submit the first open-source pull request to vLLM or Triton.</td></tr>
+            <tr><td>Month 12</td><td>Finish the disaggregated serving write-up, complete the agentic system, and finish advanced Graph and Dynamic Programming practice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Streaming & Observability</h3>
+        <ul>
+          <li>Apache Flink: event-time processing, stateful operations</li>
+          <li>Real-time dashboards: Grafana + Loki + Tempo</li>
+          <li>Build a fault-tolerant streaming pipeline (Kafka -> Flink -> Delta Lake)</li>
+          <li>SLI/SLO design for data pipelines</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Serving Systems</h3>
+        <ul>
+          <li>Prefill/decode separation with vLLM as the scheduler entry point</li>
+          <li>Build a small benchmark for cache transfer time versus compute time</li>
+          <li>Study Mooncake before writing the toy disaggregated serving demo</li>
+          <li>Track when KV cache movement, not model compute, becomes the bottleneck</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Agentic Serving</h3>
+        <ul>
+          <li>Reframe the Claude + MCP system as an agentic serving workload</li>
+          <li>Measure request fan-out, retries, tool loops, and cache reuse</li>
+          <li>Read AgentServe or ThunderAgent before finalizing the design</li>
+          <li>Optimise for many small calls instead of one long generation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Data Modeling & Storage Systems</h3>
+        <ul>
+          <li>Relational: normalization, foreign keys, indexes, query optimization</li>
+          <li>NoSQL: document (MongoDB), key-value (Redis), columnar (Cassandra)</li>
+          <li>Distributed storage: S3 internals, HDFS, Delta Lake</li>
+          <li>Read: "The Tail at Scale" (Jeff Dean, Google)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Site Reliability Engineering (SRE)</h3>
+        <ul>
+          <li>SLIs: latency, error rate, throughput, saturation</li>
+          <li>SLOs: target values (e.g., 99.9% uptime)</li>
+          <li>Error budgets: how much downtime you can afford</li>
+          <li>Blameless post-mortems: learn from incidents, never blame</li>
+          <li>Read: Google's SRE Book (Ch. 2-4)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>DSA Focus – Year 3</h3>
+        <ul>
+          <li>Advanced Graphs (Dijkstra, MST, Bipartite): 10-12</li>
+          <li>Advanced DP (Bitmask, Interval, Tree DP): 8-10</li>
+          <li>Design / Data Structures: 8-10</li>
+          <li>Sliding Window / Two Pointers (Advanced): 8-10</li>
+          <li>Trie / Advanced String: 5-8</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Deliverables</h3>
+        <ul>
+          <li>Disaggregated serving demo with benchmark writeup</li>
+          <li>Agentic system using Claude + MCP</li>
+          <li>Reading notes on Mooncake, QServe, KVQuant, and FlashInfer</li>
+          <li>Open-source contribution to vLLM or Triton</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="success-metrics">
+      <h3>Success Metrics</h3>
+      <ul>
+        <li>Disaggregated serving demo includes a measurable KV cache handoff</li>
+        <li>Agentic system includes at least one reproducible tool-use benchmark</li>
+        <li>Writeup explains when the split helps and when it adds overhead</li>
+        <li>At least one serving or Triton contribution gets merged upstream</li>
+      </ul>
+    </div>
+
+    <section class="project-showcase">
+      <h3>Hero Project: Disaggregated Serving Demo</h3>
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="tech-tag">vLLM</span>
+          <span class="tech-tag">KV Cache</span>
+          <span class="tech-tag">Mooncake</span>
+        </div>
+        <p>Two processes, one for prefill and one for decode, talking over a fast local transport with a basic KV cache handoff. The deliverable is the benchmark writeup, not raw speed.</p>
+        <span class="project-status">Draft</span>
+      </div>
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="tech-tag">Claude</span>
+          <span class="tech-tag">MCP</span>
+          <span class="tech-tag">Agentic Serving</span>
+        </div>
+        <p>Reframe the original multi-tool agent as a serving problem: many short calls, tool loops, and cache-aware routing instead of one long generation.</p>
+        <span class="project-status">Coming soon</span>
+      </div>
+    </section>
+
+    <div class="resources">
+      <h3>Key Reading</h3>
+      <h4>Orientation</h4>
+      <ul>
+        <li><a href="https://arxiv.org/abs/2504.19720" target="_blank" rel="noopener noreferrer">Taming the Titans: A Survey of Efficient LLM Inference Serving (2025)</a></li>
+      </ul>
+      <h4>Core serving and cache</h4>
+      <ul>
+        <li><a href="https://arxiv.org/abs/2407.00079" target="_blank" rel="noopener noreferrer">Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving</a></li>
+        <li><a href="https://arxiv.org/abs/2501.01005" target="_blank" rel="noopener noreferrer">FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving</a></li>
+        <li><a href="https://arxiv.org/abs/2401.18079" target="_blank" rel="noopener noreferrer">KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization</a></li>
+        <li><a href="https://arxiv.org/abs/2405.04532" target="_blank" rel="noopener noreferrer">QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving</a></li>
+        <li><a href="https://arxiv.org/abs/2407.12820" target="_blank" rel="noopener noreferrer">PQCache: Product Quantization-based KVCache for Long Context LLM Inference</a></li>
+        <li><a href="https://arxiv.org/abs/2305.09781" target="_blank" rel="noopener noreferrer">SpecInfer: Accelerating Generative LLM Serving with Tree-based Speculative Inference and Verification</a></li>
+      </ul>
+      <h4>Certifications</h4>
+      <ul>
+        <li><a href="https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/" target="_blank" rel="noopener noreferrer">AWS Certified Machine Learning Engineer – Associate (MLA-C01)</a> — required</li>
+        <li><a href="https://cloud.google.com/learn/certification/machine-learning-engineer" target="_blank" rel="noopener noreferrer">Google Cloud Professional Machine Learning Engineer</a> — alternate to AWS ML Engineer; pick one</li>
+        <li><a href="https://cloud.google.com/learn/certification/cloud-devops-engineer" target="_blank" rel="noopener noreferrer">Google Cloud Professional Cloud DevOps Engineer</a> — SRE and reliability track</li>
+        <li><a href="https://www.mongodb.com/certification" target="_blank" rel="noopener noreferrer">MongoDB Certified Associate Developer</a> — data modeling track</li>
+        <li><a href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-professional/" target="_blank" rel="noopener noreferrer">NVIDIA Generative AI LLMs Professional (NCP-GENL)</a> — stretch item; attempt after the AWS ML cert is done</li>
+      </ul>
+      <h4>No certification for disaggregated serving, KV cache, or quantization</h4>
+      <ul>
+        <li>No formal certification exists for disaggregated serving, KV cache management, or quantization (W4A8, KV). The benchmark writeup and any merged pull request into vLLM or Triton are the actual proof for this section — not a badge.</li>
+      </ul>
+    </div>
+
+    <div class="alignment-note">
+      <span class="note-label">Anthropic Relevance</span>
+      <p>Anthropic's production systems rely on low-latency serving and agentic workflows. Demonstrated ability to reason about disaggregated architecture, cache movement, and tool-heavy loops maps directly to their ML Platform and Research Engineering teams.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="year2.html" class="btn secondary"><- Year 2</a>
+      <a href="year4.html" class="btn primary">Year 4 -></a>
+    </div>
+
+    <footer class="footer">
+      <p>Year 3 - Specialisation - Polaris Cloud & Data Engineering</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

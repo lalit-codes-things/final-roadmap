@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year 2 - Core Engineering - Polaris Edge</title>
+  <meta name="description" content="Year 2 core engineering roadmap for distributed systems and infrastructure." />
+  <meta property="og:title" content="Year 2 - Core Engineering - Polaris Edge" />
+  <meta property="og:description" content="Build distributed systems, streaming, containers, and infrastructure as code." />
+  <meta property="og:image" content="og-preview.png" />
+  <meta name="theme-color" content="#0F1117" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav" id="navbar">
+      <a href="index.html" class="brand"></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="year1.html">Year 1</a>
+        <a href="year2.html" class="active">Year 2</a>
+        <a href="year3.html">Year 3</a>
+        <a href="year4.html">Year 4</a>
+      </div>
+
+    </nav>
+
+    <div id="progress-bar"></div>
+
+    <section class="page-header">
+      <span class="eyebrow">Year 2 - 2027-2028</span>
+      <h1>Core Engineering</h1>
+      <p class="page-desc">Distributed systems, streaming, containers, and infrastructure as code.</p>
+    </section>
+
+    <div class="commit-box">
+      <span class="commit-label">Weekly Commitment</span>
+      <span class="commit-value">12 hours self-study + Polaris curriculum</span>
+    </div>
+
+    <div class="skill-section">
+      <h3>Core Skills</h3>
+      <div class="skill-bar"><span>Kafka</span><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div></div>
+      <div class="skill-bar"><span>Spark</span><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div>
+      <div class="skill-bar"><span>Kubernetes</span><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div></div>
+      <div class="skill-bar"><span>Terraform</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div></div>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <h3>12-Month Execution Plan</h3>
+      <div class="table-responsive">
+        <table class="dsa-table">
+          <thead>
+            <tr>
+              <th style="width: 15%;">Month</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Month 1</td><td>Apache Kafka producers and consumers.</td></tr>
+            <tr><td>Month 2</td><td>Kafka stream processing. Prepare for and pass the Confluent Kafka certification.</td></tr>
+            <tr><td>Month 3</td><td>Apache Spark RDDs, DataFrames and Spark SQL.</td></tr>
+            <tr><td>Month 4</td><td>Spark Structured Streaming. Pass the Databricks Spark Developer Associate certification.</td></tr>
+            <tr><td>Month 5</td><td>Terraform modules and state management. Pass the Terraform Associate certification.</td></tr>
+            <tr><td>Month 6</td><td>Kubernetes and Amazon EKS. Deploy microservices. Begin CKAD preparation.</td></tr>
+            <tr><td>Month 7</td><td>Pass CKAD. Configure Prometheus and Grafana monitoring.</td></tr>
+            <tr><td>Month 8</td><td>AWS Solutions Architect Associate preparation.</td></tr>
+            <tr><td>Month 9</td><td>Pass AWS SAA-C03. Complete Triton Puzzles 1–10.</td></tr>
+            <tr><td>Month 10</td><td>CUDA fundamentals: memory coalescing, warp divergence and Nsight profiling.</td></tr>
+            <tr><td>Month 11</td><td>Study Raft, consistency models and CAP tradeoffs from Kleppmann. Add IAM and cloud cost reasoning to the portfolio.</td></tr>
+            <tr><td>Month 12</td><td>Add schema validation using dbt or Great Expectations. Finish the real-time data pipeline project.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Data Engineering</h3>
+        <ul>
+          <li>Apache Kafka: producers, consumers, stream processing</li>
+          <li>Apache Spark: RDDs, DataFrames, SQL, structured streaming</li>
+          <li>Data Lakes (Delta Lake) & Data Warehouses (Redshift)</li>
+          <li>ETL orchestration with Airflow or Dagster</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cloud & Infrastructure</h3>
+        <ul>
+          <li>AWS Solutions Architect - Associate certification</li>
+          <li>Terraform: infrastructure as code (modules, state management)</li>
+          <li>Kubernetes: deploy microservices on EKS</li>
+          <li>Prometheus + Grafana for real-time monitoring</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Systems & GPU</h3>
+        <ul>
+          <li>Triton Puzzles 1-10</li>
+          <li>Fused ReLU, softmax, LayerNorm in Triton</li>
+          <li>CUDA basics: memory coalescing, warp divergence</li>
+          <li>Nsight profiling</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Distributed Systems Foundations</h3>
+        <ul>
+          <li>Consensus: Raft leader election and log replication</li>
+          <li>Consistency models: strong, eventual, causal, linearizable</li>
+          <li>CAP theorem tradeoffs in real systems</li>
+          <li>Read Kleppmann's Designing Data-Intensive Applications as the anchor text</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Data Science Foundations</h3>
+        <ul>
+          <li>Pandas: data manipulation, cleaning, aggregation</li>
+          <li>Stats: mean, median, variance, distributions, hypothesis testing</li>
+          <li>EDA: exploratory data analysis with Matplotlib, Seaborn</li>
+          <li>Project: clean and visualize a real dataset (Kaggle)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>DSA Focus – Year 2</h3>
+        <ul>
+          <li>Trees: 20-25 problems (critical)</li>
+          <li>Graphs: 15-20 (critical)</li>
+          <li>Dynamic Programming: 15-20</li>
+          <li>Heaps / Priority Queues: 8-10</li>
+          <li>Greedy Algorithms: 8-10</li>
+          <li>Bit Manipulation: 5-8</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Deliverables</h3>
+        <ul>
+          <li>AWS Solutions Architect certified</li>
+          <li>Real-time data pipeline (Kafka -> Spark -> S3) — with automated data quality checks (Great Expectations)</li>
+          <li>EKS cluster with Terraform + monitoring</li>
+          <li>Triton kernel suite (GitHub)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IAM &amp; Cloud Cost Reasoning</h3>
+        <ul>
+          <li>IAM role design: least-privilege policies, permission boundaries, role chaining</li>
+          <li>Service control policies (SCPs) and resource-based policies</li>
+          <li>FinOps basics: reading the AWS Cost and Usage Report (CUR)</li>
+          <li>Understand what drives spend in a Kafka-Spark-EKS stack</li>
+          <li>Right-sizing EC2 and Spot instances; S3 storage class selection</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Schema Contracts &amp; Data Quality</h3>
+        <ul>
+          <li>Schema contracts: define and enforce expected column types, nullability, ranges</li>
+          <li>Great Expectations: write expectation suites for the Year 1 ETL pipeline</li>
+          <li>dbt tests: not-null, unique, accepted-values, relationships</li>
+          <li>Apply a quality gate to the Year 2 real-time pipeline (Kafka -> Spark -> S3)</li>
+          <li>Alerting on schema drift: detect when upstream data changes break downstream jobs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="success-metrics">
+      <h3>Success Metrics</h3>
+      <ul>
+        <li>One streaming pipeline runs reliably with documented backpressure handling</li>
+        <li>EKS cluster provisioning can be recreated from scratch with Terraform</li>
+        <li>Triton Puzzle set completed with benchmark notes</li>
+        <li>DDIA notes cover Raft, consistency models, and CAP tradeoffs</li>
+      </ul>
+    </div>
+
+    <section class="project-showcase">
+      <h3>Project: Real-time Data Pipeline</h3>
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="tech-tag">Kafka</span>
+          <span class="tech-tag">Spark</span>
+          <span class="tech-tag">Delta Lake</span>
+          <span class="tech-tag">Airflow</span>
+        </div>
+        <p>End-to-end streaming pipeline processing 10M+ events/day with sub-second latency. Includes automated data quality gates via Great Expectations.</p>
+        <span class="project-status">Not started</span>
+      </div>
+    </section>
+
+    <div class="resources">
+      <h3>Key Reading</h3>
+      <ul>
+        <li>Martin Kleppmann, Designing Data-Intensive Applications</li>
+      </ul>
+      <h4>Certifications</h4>
+      <ul>
+        <li><a href="https://www.confluent.io/certification/" target="_blank" rel="noopener noreferrer">Confluent Certified Developer for Apache Kafka</a></li>
+        <li><a href="https://www.databricks.com/learn/certification/apache-spark-developer-associate" target="_blank" rel="noopener noreferrer">Databricks Certified Associate Developer for Apache Spark</a></li>
+        <li><a href="https://www.cncf.io/certification/ckad/" target="_blank" rel="noopener noreferrer">CKAD – Certified Kubernetes Application Developer</a></li>
+        <li><a href="https://www.hashicorp.com/certification/terraform-associate" target="_blank" rel="noopener noreferrer">HashiCorp Certified: Terraform Associate</a></li>
+        <li><a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" rel="noopener noreferrer">AWS Certified Solutions Architect – Associate (SAA-C03)</a></li>
+      </ul>
+      <h4>No certification for distributed systems fundamentals</h4>
+      <ul>
+        <li>Kleppmann's material (DDIA) has no formal certification track. Proof here is the DDIA reading notes covering Raft, consistency models, and CAP tradeoffs, plus the working pipeline deliverables.</li>
+      </ul>
+    </div>
+
+    <div class="alignment-note">
+      <span class="note-label">Anthropic Relevance</span>
+      <p>Anthropic scales training across thousands of GPUs. Deep knowledge of Triton/CUDA and distributed data processing (Kafka/Spark) is directly applicable to their infrastructure and data pipeline teams.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="year1.html" class="btn secondary"><- Year 1</a>
+      <a href="year3.html" class="btn primary">Year 3 -></a>
+    </div>
+
+    <footer class="footer">
+      <p>Year 2 - Core Engineering - Polaris Cloud & Data Engineering</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
