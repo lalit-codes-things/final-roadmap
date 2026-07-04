@@ -753,44 +753,57 @@ p {
   .nav-buttons .btn { padding: 0.6rem 0.5rem; }
 
   /* Skill bars stack on mobile */
-  .skill-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
-  .skill-bar span:first-child { width: auto; margin-bottom: 0.35rem; }
-  .bar-track { width: 100%; }
+-  .skill-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+-  .skill-bar span:first-child { width: auto; margin-bottom: 0.35rem; }
+-  .bar-track { width: 100%; }
++  .skill-bar { width: 100%; flex-direction: column; align-items: flex-start; gap: 0.4rem; }
++  .skill-bar span:first-child { display: block; min-height: 2.4rem; line-height: 1.2; width: auto; margin-bottom: 0.35rem; }
++  .bar-track { width: 100%; display: block; }
+ 
+   /* Make hero-right and SVG expand in column layout */
+   .hero-right { width: 100%; flex: 1 1 100%; }
+   .arch-diagram { width: 100%; max-width: 100%; }
+ 
+   /* DSA tables become stacked cards on narrow screens */
+   .dsa-table { font-size: 0.8rem; min-width: 0; }
+   .dsa-table thead { display: none; }
+   .dsa-table tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
+   .dsa-table td { display: block; border-bottom: none; padding: 0.4rem 0; }
+   /* Each td should have a data-label="Header name" attribute added in the markup; the label is shown above the value */
+   .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
+ 
+   .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
+ 
+   /* New: scale down page header and reduce spacing for mobile */
+   .page-header h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+   .page-desc { font-size: 1rem; }
+ 
+   .how-to-use, .success-metrics, .resources, .alignment-note { padding: 1.25rem 1.5rem; }
+   .moats, .bento, .dsa-summary { margin: 2.5rem 0; }
+   .stats-bar { margin: 2rem 0; padding: 1.25rem; }
+   .card, .bento-item, .moat-card { padding: 1.25rem; }
+ 
+   /* Tighten hero */
+   .hero-sub { font-size: 1rem; }
+   .hero { padding: 2rem 0 2.5rem; margin-bottom: 2.5rem; }
+ }
+ 
+ @media (max-width: 480px) {
+   .moats-grid { grid-template-columns: 1fr; }
+   .stats-bar { grid-template-columns: repeat(2, 1fr); }
+   .hero-left h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+ 
+   /* Slightly tighter nav gap on very narrow phones; allow horizontal scrolling if needed */
+   .nav-links { gap: 0.4rem; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+   .nav-links a { display: inline-block; }
+ }
 
-  /* Make hero-right and SVG expand in column layout */
-  .hero-right { width: 100%; flex: 1 1 100%; }
-  .arch-diagram { width: 100%; max-width: 100%; }
-
-  /* DSA tables become stacked cards on narrow screens */
-  .dsa-table { font-size: 0.8rem; min-width: 0; }
-  .dsa-table thead { display: none; }
-  .dsa-table tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
-  .dsa-table td { display: block; border-bottom: none; padding: 0.4rem 0; }
-  /* Each td should have a data-label="Header name" attribute added in the markup; the label is shown above the value */
-  .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
-
-  .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
-
-  /* New: scale down page header and reduce spacing for mobile */
-  .page-header h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
-  .page-desc { font-size: 1rem; }
-
-  .how-to-use, .success-metrics, .resources, .alignment-note { padding: 1.25rem 1.5rem; }
-  .moats, .bento, .dsa-summary { margin: 2.5rem 0; }
-  .stats-bar { margin: 2rem 0; padding: 1.25rem; }
-  .card, .bento-item, .moat-card { padding: 1.25rem; }
-
-  /* Tighten hero */
-  .hero-sub { font-size: 1rem; }
-  .hero { padding: 2rem 0 2.5rem; margin-bottom: 2.5rem; }
-}
-
-@media (max-width: 480px) {
-  .moats-grid { grid-template-columns: 1fr; }
-  .stats-bar { grid-template-columns: repeat(2, 1fr); }
-  .hero-left h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
-
-  /* Slightly tighter nav gap on very narrow phones; allow horizontal scrolling if needed */
-  .nav-links { gap: 0.4rem; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
-  .nav-links a { display: inline-block; }
-}
++@media (max-width: 400px) {
++  .commit-box {
++    padding: 0.6rem 1rem;
++    border-radius: 1rem;
++    gap: 0.5rem;
++  }
++  .commit-label { font-size: 0.7rem; }
++  .commit-value { font-size: 0.85rem; }
++}
