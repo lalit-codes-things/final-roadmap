@@ -747,15 +747,32 @@ p {
   .nav { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; }
   .nav .brand { display: none; }
   .nav-links { justify-content: center; gap: 0.6rem; }
-  .nav a { font-size: 0.85rem; padding: 0.3rem 0; }
-  .nav-controls { justify-content: center; margin-left: 0; }
+  /* Increased tap targets for mobile nav and buttons */
+  .nav a { font-size: 0.85rem; padding: 0.6rem 0.5rem; }
+  .btn.small { padding: 0.6rem 0.8rem; }
+  .nav-buttons .btn { padding: 0.6rem 0.5rem; }
+
+  /* Skill bars stack on mobile */
+  .skill-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .skill-bar span:first-child { width: auto; margin-bottom: 0.35rem; }
+
+  /* DSA tables become stacked cards on narrow screens */
+  .dsa-table { font-size: 0.8rem; min-width: 0; }
+  .dsa-table thead { display: none; }
+  .dsa-table tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
+  .dsa-table td { display: block; border-bottom: none; padding: 0.4rem 0; }
+  /* Each td should have a data-label="Header name" attribute added in the markup; the label is shown above the value */
+  .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
+
   .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
-  .dsa-table { font-size: 0.8rem; }
-  .dsa-table th, .dsa-table td { padding: 0.4rem 0.6rem; }
 }
 
 @media (max-width: 480px) {
   .moats-grid { grid-template-columns: 1fr; }
   .stats-bar { grid-template-columns: 1fr; }
   .hero-left h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+
+  /* Slightly tighter nav gap on very narrow phones; allow horizontal scrolling if needed */
+  .nav-links { gap: 0.4rem; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  .nav-links a { display: inline-block; }
 }
