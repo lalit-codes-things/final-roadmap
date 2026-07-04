@@ -770,6 +770,19 @@ p {
   .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
 
   .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
+
+  /* New: scale down page header and reduce spacing for mobile */
+  .page-header h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .page-desc { font-size: 1rem; }
+
+  .how-to-use, .success-metrics, .resources, .alignment-note { padding: 1.25rem 1.5rem; }
+  .moats, .bento, .dsa-summary { margin: 2.5rem 0; }
+  .stats-bar { margin: 2rem 0; padding: 1.25rem; }
+  .card, .bento-item, .moat-card { padding: 1.25rem; }
+
+  /* Tighten hero */
+  .hero-sub { font-size: 1rem; }
+  .hero { padding: 2rem 0 2.5rem; margin-bottom: 2.5rem; }
 }
 
 @media (max-width: 480px) {
