@@ -143,8 +143,6 @@ p {
   border-bottom-color: var(--accent);
 }
 
-
-
 /* Buttons */
 .btn {
   display: inline-block;
@@ -248,6 +246,36 @@ p {
   filter: brightness(0) invert(1);
 }
 
+/* What Is This */
+.what-is-this {
+  margin: 4rem 0;
+}
+
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.what-card {
+  background: var(--card-bg);
+  padding: 1.75rem;
+  border-radius: 2rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+
+.what-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.what-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
 /* How To Use */
 .how-to-use {
   background: var(--card-bg);
@@ -291,6 +319,66 @@ p {
   font-size: 0.95rem;
 }
 
+/* For Whom */
+.for-whom {
+  margin: 4rem 0;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.role-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+
+.role-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Who Should NOT Use */
+.who-should-not {
+  margin: 4rem 0;
+}
+
+.not-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.not-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+
+.not-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.not-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 /* Moats Section */
 .moats {
   margin: 4rem 0;
@@ -332,6 +420,70 @@ p {
 .moat-card p {
   font-size: 0.95rem;
   color: var(--text-secondary);
+}
+
+/* Progression */
+.progression {
+  margin: 4rem 0;
+}
+
+.progression-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.progression-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.progression-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.prog-year {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.progression-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.progression-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.link-arrow {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: gap 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.link-arrow:hover {
+  gap: 0.5rem;
 }
 
 /* Bento */
@@ -393,6 +545,13 @@ p {
 .tier ul { list-style: none; padding: 0; }
 .tier li { padding: 0.2rem 0; font-size: 0.9rem; color: var(--text-secondary); }
 
+.market-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 1.25rem;
+  font-style: italic;
+}
+
 /* DSA Summary Table */
 .dsa-summary {
   margin: 4rem 0;
@@ -450,6 +609,33 @@ p {
   background: var(--code-bg);
   color: var(--text);
   border-top: 2px solid var(--border);
+}
+
+.striped {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.striped thead {
+  background: var(--code-bg);
+}
+
+.striped th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+}
+
+.striped td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.striped tbody tr:last-child td {
+  border-bottom: none;
 }
 
 /* Stats Bar */
@@ -518,12 +704,17 @@ p {
   margin: 2rem 0;
 }
 
+.card-list {
+  margin: 4rem 0;
+}
+
 .card {
   background: var(--card-bg);
   padding: 1.75rem;
   border-radius: 2rem;
   border: 1px solid var(--card-border);
   box-shadow: var(--shadow);
+  margin-top: 1.5rem;
 }
 
 .card ul {
@@ -543,6 +734,13 @@ p {
   position: absolute;
   left: 0;
   color: var(--accent);
+}
+
+.muted {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 /* Project Showcase */
@@ -693,6 +891,64 @@ p {
   margin: 0;
 }
 
+/* Why This Works */
+.why-this-works {
+  margin: 4rem 0;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.philosophy-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+
+.philosophy-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.philosophy-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* CTA Footer */
+.cta-footer {
+  background: var(--card-bg);
+  padding: 2.5rem 2.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  text-align: center;
+  margin: 4rem 0 0;
+}
+
+.cta-content h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Nav buttons */
 .nav-buttons {
   display: flex;
@@ -735,10 +991,27 @@ p {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .philosophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .progression-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero { flex-direction: column; gap: 2rem; }
   .how-to-use-grid { grid-template-columns: 1fr; }
   .moats-grid { grid-template-columns: 1fr 1fr; }
+  .roles-grid { grid-template-columns: 1fr; }
+  .not-grid { grid-template-columns: 1fr; }
+  .progression-grid { grid-template-columns: 1fr; }
+  .what-grid { grid-template-columns: 1fr; }
+  .philosophy-grid { grid-template-columns: 1fr; }
   .bento { grid-template-columns: 1fr; }
   .bento-item.large { grid-column: span 1; }
   .comparison { grid-template-columns: 1fr; }
@@ -753,57 +1026,68 @@ p {
   .nav-buttons .btn { padding: 0.6rem 0.5rem; }
 
   /* Skill bars stack on mobile */
--  .skill-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
--  .skill-bar span:first-child { width: auto; margin-bottom: 0.35rem; }
--  .bar-track { width: 100%; }
-+  .skill-bar { width: 100%; flex-direction: column; align-items: flex-start; gap: 0.4rem; }
-+  .skill-bar span:first-child { display: block; min-height: 2.4rem; line-height: 1.2; width: auto; margin-bottom: 0.35rem; }
-+  .bar-track { width: 100%; display: block; }
- 
-   /* Make hero-right and SVG expand in column layout */
-   .hero-right { width: 100%; flex: 1 1 100%; }
-   .arch-diagram { width: 100%; max-width: 100%; }
- 
-   /* DSA tables become stacked cards on narrow screens */
-   .dsa-table { font-size: 0.8rem; min-width: 0; }
-   .dsa-table thead { display: none; }
-   .dsa-table tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
-   .dsa-table td { display: block; border-bottom: none; padding: 0.4rem 0; }
-   /* Each td should have a data-label="Header name" attribute added in the markup; the label is shown above the value */
-   .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
- 
-   .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
- 
-   /* New: scale down page header and reduce spacing for mobile */
-   .page-header h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
-   .page-desc { font-size: 1rem; }
- 
-   .how-to-use, .success-metrics, .resources, .alignment-note { padding: 1.25rem 1.5rem; }
-   .moats, .bento, .dsa-summary { margin: 2.5rem 0; }
-   .stats-bar { margin: 2rem 0; padding: 1.25rem; }
-   .card, .bento-item, .moat-card { padding: 1.25rem; }
- 
-   /* Tighten hero */
-   .hero-sub { font-size: 1rem; }
-   .hero { padding: 2rem 0 2.5rem; margin-bottom: 2.5rem; }
- }
- 
- @media (max-width: 480px) {
-   .moats-grid { grid-template-columns: 1fr; }
-   .stats-bar { grid-template-columns: repeat(2, 1fr); }
-   .hero-left h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
- 
-   /* Slightly tighter nav gap on very narrow phones; allow horizontal scrolling if needed */
-   .nav-links { gap: 0.4rem; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
-   .nav-links a { display: inline-block; }
- }
+  .skill-bar { width: 100%; flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .skill-bar span:first-child { display: block; min-height: 2.4rem; line-height: 1.2; width: auto; margin-bottom: 0.35rem; }
+  .bar-track { width: 100%; display: block; }
 
-+@media (max-width: 400px) {
-+  .commit-box {
-+    padding: 0.6rem 1rem;
-+    border-radius: 1rem;
-+    gap: 0.5rem;
-+  }
-+  .commit-label { font-size: 0.7rem; }
-+  .commit-value { font-size: 0.85rem; }
-+}
+  /* Make hero-right and SVG expand in column layout */
+  .hero-right { width: 100%; flex: 1 1 100%; }
+  .arch-diagram { width: 100%; max-width: 100%; }
+
+  /* DSA tables become stacked cards on narrow screens */
+  .dsa-table { font-size: 0.8rem; min-width: 0; }
+  .dsa-table thead { display: none; }
+  .dsa-table tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
+  .dsa-table td { display: block; border-bottom: none; padding: 0.4rem 0; }
+  /* Each td should have a data-label="Header name" attribute added in the markup; the label is shown above the value */
+  .dsa-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
+
+  .striped { font-size: 0.8rem; }
+  .striped thead { display: none; }
+  .striped tr { display: block; border-bottom: 1px solid var(--border); padding: 0.6rem; }
+  .striped td { display: block; border-bottom: none; padding: 0.4rem 0; }
+  .striped td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-muted); margin-bottom: 0.25rem; font-size: 0.85rem; }
+
+  .commit-box { border-radius: 1.5rem; flex-wrap: wrap; padding: 1rem; }
+
+  /* New: scale down page header and reduce spacing for mobile */
+  .page-header h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .page-desc { font-size: 1rem; }
+
+  .how-to-use, .success-metrics, .resources, .alignment-note { padding: 1.25rem 1.5rem; }
+  .moats, .bento, .dsa-summary, .for-whom, .who-should-not, .progression, .why-this-works, .cta-footer { margin: 2.5rem 0; }
+  .stats-bar { margin: 2rem 0; padding: 1.25rem; }
+  .card, .bento-item, .moat-card, .role-card, .not-card, .what-card, .philosophy-card { padding: 1.25rem; }
+
+  /* Tighten hero */
+  .hero-sub { font-size: 1rem; }
+  .hero { padding: 2rem 0 2.5rem; margin-bottom: 2.5rem; }
+
+  /* CTA footer */
+  .cta-footer { padding: 1.5rem; }
+  .cta-buttons { flex-direction: column; }
+  .cta-buttons .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .moats-grid { grid-template-columns: 1fr; }
+  .roles-grid { grid-template-columns: 1fr; }
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .progression-grid { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .hero-left h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+
+  /* Slightly tighter nav gap on very narrow phones; allow horizontal scrolling if needed */
+  .nav-links { gap: 0.4rem; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  .nav-links a { display: inline-block; }
+}
+
+@media (max-width: 400px) {
+  .commit-box {
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
+  }
+  .commit-label { font-size: 0.7rem; }
+  .commit-value { font-size: 0.85rem; }
+}
